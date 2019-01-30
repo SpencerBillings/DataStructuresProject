@@ -8,7 +8,19 @@
 
 #include "Controller.hpp"
 
+
 void Controller :: start()
 {
     cout << "Welcome, welcome to Papa's house." << endl;
+    usingNodes();
+}
+
+void Controller :: usingNodes()
+{
+    Node<int> mine(5);
+    Node<string> wordHolder("Words can be stored");
+    cout << mine.getData() << endl;
+    cout << wordHolder.getData() << endl;
+    wordHolder.setData("[Insert Text]");
+    cout << wordHolder.getData() << endl;
 }

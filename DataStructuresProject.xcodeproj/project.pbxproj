@@ -83,7 +83,8 @@
 		EB9DCDBC21FF5BE300446909 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EB9DCDC721FF60D100446909 /* Node.hpp */,
+				EBAD01222201F0D1007FAD80 /* Linear */,
+				EBAD01212201F0B8007FAD80 /* Nodes */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +102,21 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBAD01212201F0B8007FAD80 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				EB9DCDC721FF60D100446909 /* Node.hpp */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		EBAD01222201F0D1007FAD80 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Linear;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
