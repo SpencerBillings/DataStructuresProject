@@ -30,6 +30,8 @@
 		EB9DCDC421FF5D8700446909 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		EB9DCDC521FF5D8700446909 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		EB9DCDC721FF60D100446909 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		EBAD01242201F8AF007FAD80 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		EBAD0126220204F2007FAD80 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		EB9DCDBC21FF5BE300446909 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBAD0125220204DB007FAD80 /* Structures */,
 				EBAD01222201F0D1007FAD80 /* Linear */,
 				EBAD01212201F0B8007FAD80 /* Nodes */,
 			);
@@ -108,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				EB9DCDC721FF60D100446909 /* Node.hpp */,
+				EBAD01242201F8AF007FAD80 /* LinearNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -117,6 +121,14 @@
 			children = (
 			);
 			path = Linear;
+			sourceTree = "<group>";
+		};
+		EBAD0125220204DB007FAD80 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				EBAD0126220204F2007FAD80 /* Array.hpp */,
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
