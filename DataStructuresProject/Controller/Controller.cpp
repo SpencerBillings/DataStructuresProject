@@ -8,11 +8,11 @@
 
 #include "Controller.hpp"
 
-
 void Controller :: start()
 {
     cout << "Welcome, welcome to Papa's house." << endl;
     usingNodes();
+    testFiles();
 }
 
 void Controller :: usingNodes()
@@ -23,4 +23,13 @@ void Controller :: usingNodes()
     cout << wordHolder.getData() << endl;
     wordHolder.setData("[Insert Text]");
     cout << wordHolder.getData() << endl;
+}
+
+void Controller :: testFiles()
+{
+    vector<CrimeData> crimeVector;
+    for (int index = 234; index < 256; index++)
+    {
+        cout << index << ": contents are: " << crimeVector[index] << endl;
+    }
 }
