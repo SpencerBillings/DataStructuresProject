@@ -100,8 +100,43 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
 }
 
 template <class Type>
-
+Type LinkedList<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < this->size);
+    Type data;
+    
+    LinearNode<Type> * current = front;
+    
+    for (int position = 0; position < index; position++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    
+    return data;
+}
 
 template <class Type>
+Type LinkedList<Type> :: remove(int index)
+{
+    assert(index >= 0 && index < this->size);
+    
+    LinearNode<Type> * current = front;
+    LinearNode<Type> * toBeRemoved = nullptr;
+    LinearNode<Type> * previous = nullptr;
+    
+    Type removeData;
+    
+    if (index == 0)
+    {
+        toBeRemoved = front;
+        this->front = this->front->getNextNode();
+    }
+    else
+    {
+        <#statements#>
+    }
+}
 
 #endif /* LinkedList_hpp */
