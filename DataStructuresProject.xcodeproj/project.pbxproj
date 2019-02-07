@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		EB14F7C5220C83B200FB13DA /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		EB14F7C6220C84E800FB13DA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		EB14F7C7220C936D00FB13DA /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		EB87EBD72209DC4500D11D22 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		EB87EBD82209DC4500D11D22 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		EB87EBDA2209E07300D11D22 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
@@ -163,6 +164,7 @@
 			children = (
 				EB14F7C5220C83B200FB13DA /* Array.hpp */,
 				EB14F7C6220C84E800FB13DA /* List.hpp */,
+				EB14F7C7220C936D00FB13DA /* LinkedList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
