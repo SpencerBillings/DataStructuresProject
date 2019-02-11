@@ -36,7 +36,7 @@ public:
     Type getFromIndex(int index);
     Type remove(int index);
     //  Type setAtIndex(int index, Type item);
-    //  bool contains(Type item);
+    bool contains(Type item);
 };
 
 template <class Type>
@@ -135,8 +135,51 @@ Type LinkedList<Type> :: remove(int index)
     }
     else
     {
-        <#statements#>
+        for (int position = 0; position < index; position++)
+        {
+            previous = current;
+            current = current->getNextNode();
+        }
+        
+        toBeRemoved = current;
+        
+        if (index == this->size - 1)
+        {
+            previous->setNextNode(nullptr);
+            end = previous;
+        }
+        else
+        {
+            current = toBeRemoved->getNextNode();
+            previous->setNextNode(current);
+        }
     }
+    this->size -= 1;
+    
+    removedData = toBeRemoved->getData();
+    delete toBeRemoved;
+    return removedData;
+}
+
+template <class Type>
+bool LinkedList<Type> :: contains(Type item)
+{
+    assert(index >= 0 && index < this->size);
+    
+    LinearNode<Type> * searchPointer = front;
+    bool exists = false;
+    
+    // this->size and getSize() do the same thing
+    for (index = 0; index < this->size; index++)
+    {
+        if (searchPointer->getData() == item)
+        {
+            exists = true'
+        }
+        searchPointer = searchPointer->getNextNode();
+    }
+    
+    return exists;
 }
 
 #endif /* LinkedList_hpp */
