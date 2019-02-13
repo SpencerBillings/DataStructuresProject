@@ -27,9 +27,9 @@ void Controller :: usingNodes()
 
 void Controller :: testFiles()
 {
-    vector<CrimeData> crimeVector;
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("../Resources/Data/crime.csv");
     for (int index = 234; index < 256; index++)
     {
-        cout << index << ": contents are: " << crimeVector[index] << endl;
+        cout << index << ": contents are: " << myData[index] << endl;
     }
 }

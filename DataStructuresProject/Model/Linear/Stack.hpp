@@ -19,7 +19,7 @@ public:
     ~Stack();
     
     // Stack specific methods
-    void puch(Type data);
+    void push(Type data);
     Type pop();
     Type peek();
     
