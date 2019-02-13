@@ -49,6 +49,43 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
     
 }
 
+LinkedList<CrimeData> FileController :: readCrimeDataToVector(string filename)
+{
+    LinkedList<CrimeData> crimes;
+    
+    string currentCSVLine;
+    int rowCount = 0;
+    
+    ifstream dataFile(filename);
+    
+    // If the file exists at that path
+    if (dataFile.is_open())
+    {
+        // Keep reading until you are at the end of the file
+        while (!dataFile.eof())
+        {
+            // Grab each line from the CSV separated by the carriage return character
+            getline(dataFile, currentCSVLine, '\r');
+            if (rowCount != 0)
+            {
+                // Create a CrimeData instance from the line. Exclude a blank line (usually if opened separately)
+                if (currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    crimes.add(row);
+                }
+            }
+            rowCount++;
+        }
+    }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    
+    return crimes;
+}
+
 vector<Music> FileController :: musicDataToVector(string filename)
 {
     std :: vector<Music> musicVector;
@@ -87,5 +124,41 @@ vector<Music> FileController :: musicDataToVector(string filename)
     }
 
     return musicVector;
+}
 
+LinkedList<Music> FileController :: musicDataToVector(string filename)
+{
+    LinkedList<Music> songs;
+    
+    string currentCSVLine;
+    int rowCount = 0;
+    
+    ifstream dataFile(filename);
+    
+    // If the file exists at that path
+    if (dataFile.is_open())
+    {
+        // Keep reading until you are at the end of the file
+        while (!dataFile.eof())
+        {
+            // Grab each line from the CSV separated by the carriage return character
+            getline(dataFile, currentCSVLine, '\r');
+            if (rowCount != 0)
+            {
+                // Create a Music instance from the line. Exclude a blank line (usually if opened separately)
+                if (currentCSVLine.length() != 0)
+                {
+                    Music row(currentCSVLine);
+                    crimes.add(row);
+                }
+            }
+            rowCount++;
+        }
+    }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    
+    return crimes;
 }
