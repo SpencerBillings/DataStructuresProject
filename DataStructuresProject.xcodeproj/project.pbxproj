@@ -13,6 +13,7 @@
 		EB87EBE32209E7D300D11D22 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB87EBE22209E7D300D11D22 /* Music.cpp */; };
 		EB9DCDC321FF5D7C00446909 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB9DCDC121FF5D7C00446909 /* Runner.cpp */; };
 		EB9DCDC621FF5D8700446909 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB9DCDC421FF5D8700446909 /* Controller.cpp */; };
+		EBF15E2322147E6400C0C377 /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBF15E2122147E6400C0C377 /* LinearTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,8 @@
 		EBA49E962211DAAE001CEB21 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		EBAD01242201F8AF007FAD80 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		EBAD0126220204F2007FAD80 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		EBF15E2122147E6400C0C377 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
+		EBF15E2222147E6400C0C377 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		EB9DCDB321FF5B5500446909 /* DataStructuresProject */ = {
 			isa = PBXGroup;
 			children = (
+				EBF15E2022147E3A00C0C377 /* Testers */,
 				EB9DCDBC21FF5BE300446909 /* Model */,
 				EB9DCDBB21FF5BD900446909 /* Controller */,
 				EB9DCDBD21FF5BED00446909 /* Diagrams */,
@@ -181,6 +185,15 @@
 			path = Structures;
 			sourceTree = "<group>";
 		};
+		EBF15E2022147E3A00C0C377 /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				EBF15E2122147E6400C0C377 /* LinearTester.cpp */,
+				EBF15E2222147E6400C0C377 /* LinearTester.hpp */,
+			);
+			path = Testers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,6 +256,7 @@
 				EB87EBE32209E7D300D11D22 /* Music.cpp in Sources */,
 				EB9DCDC621FF5D8700446909 /* Controller.cpp in Sources */,
 				EB87EBDC2209E07300D11D22 /* FileController.cpp in Sources */,
+				EBF15E2322147E6400C0C377 /* LinearTester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
