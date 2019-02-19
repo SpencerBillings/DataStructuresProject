@@ -13,6 +13,7 @@ void Controller :: start()
     cout << "Welcome, welcome to Papa's house." << endl;
     usingNodes();
     testFiles();
+    testLinear();
 }
 
 void Controller :: usingNodes()
@@ -32,4 +33,11 @@ void Controller :: testFiles()
     {
         cout << index << ": contents are: " << myData[index] << endl;
     }
+}
+
+void Controller :: testLinear()
+{
+    LinearTester lookieHere;
+    lookieHere.testVsSTL();
+    
 }

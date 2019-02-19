@@ -32,6 +32,7 @@
 		EB14F7C5220C83B200FB13DA /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		EB14F7C6220C84E800FB13DA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		EB14F7C7220C936D00FB13DA /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		EB726F34221C552500C28B9B /* CPPUML1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CPPUML1.png; path = ../../../../CPPUML1.png; sourceTree = "<group>"; };
 		EB87EBD72209DC4500D11D22 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		EB87EBD82209DC4500D11D22 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		EB87EBDA2209E07300D11D22 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		EB87EBE42209ECD600D11D22 /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		EB87EBE52209ECE400D11D22 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		EB9DCDB121FF5B5500446909 /* DataStructuresProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructuresProject; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB9DCDC021FF5CC600446909 /* CPPUML1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CPPUML1.png; path = ../../../CPPUML1.png; sourceTree = "<group>"; };
 		EB9DCDC121FF5D7C00446909 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		EB9DCDC421FF5D8700446909 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		EB9DCDC521FF5D8700446909 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		EB9DCDBD21FF5BED00446909 /* Diagrams */ = {
 			isa = PBXGroup;
 			children = (
-				EB9DCDC021FF5CC600446909 /* CPPUML1.png */,
+				EB726F34221C552500C28B9B /* CPPUML1.png */,
 			);
 			path = Diagrams;
 			sourceTree = "<group>";
