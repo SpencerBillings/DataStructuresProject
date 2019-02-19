@@ -39,5 +39,4 @@ void Controller :: testLinear()
 {
     LinearTester lookieHere;
     lookieHere.testVsSTL();
-    
 }

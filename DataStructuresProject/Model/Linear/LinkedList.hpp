@@ -26,15 +26,15 @@ public:
     // Destructor
     virtual ~LinkedList();
     // Helper Methods
-    int getSize() const;
+    virtual int getSize() const;
     LinearNode<Type> * getFront();
     LinearNode<Type> * getEnd();
     
     // Stucture Methods
-    void add(Type item);
-    void addAtIndex(int index, Type item);
-    Type getFromIndex(int index);
-    Type remove(int index);
+    virtual void add(Type item);
+    virtual void addAtIndex(int index, Type item);
+    virtual Type getFromIndex(int index);
+    virtual Type remove(int index);
     //  Type setAtIndex(int index, Type item);
     bool contains(Type item);
 };
@@ -45,6 +45,18 @@ LinkedList<Type> :: LinkedList()
     this->front = nullptr;
     this->end = nullptr;
     this->size = 0;
+}
+
+template <class Type>
+LinkedList<Type> :: ~LinkedList()
+{
+    LinearNode<Type> * destroyStructure = front;
+    while (front != nullptr)
+    {
+        front = destroyStructure->getNextNode();
+        delete destroyStructure;
+        destroyStructure = front;
+    }
 }
 
 template <class Type>
@@ -156,27 +168,42 @@ Type LinkedList<Type> :: remove(int index)
     }
     this->size -= 1;
     
-    removedData = toBeRemoved->getData();
+    removeData = toBeRemoved->getData();
     delete toBeRemoved;
-    return removedData;
+    return removeData;
+}
+
+template <class Type>
+LinearNode<Type> * LinkedList<Type> :: getEnd()
+{
+    return this->end;
+}
+
+template <class Type>
+LinearNode<Type> * LinkedList<Type> :: getFront()
+{
+    return this->front;
+}
+
+template <class Type>
+int LinkedList<Type> :: getSize() const
+{
+    return this->size;
 }
 
 template <class Type>
 bool LinkedList<Type> :: contains(Type item)
 {
-    assert(index >= 0 && index < this->size);
-    
     LinearNode<Type> * searchPointer = front;
     bool exists = false;
-    
+    searchPointer = searchPointer->getNextNode();
     // this->size and getSize() do the same thing
-    for (index = 0; index < this->size; index++)
+    for (int index = 0; index < this->size; index++)
     {
         if (searchPointer->getData() == item)
         {
-            exists = true'
+            exists = true;
         }
-        searchPointer = searchPointer->getNextNode();
     }
     
     return exists;

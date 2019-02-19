@@ -9,7 +9,7 @@
 #ifndef Array_hpp
 #define Array_hpp
 
-#include <asert.h>
+#include <assert.h>
 #include <iostream>
 
 using namespace std;
@@ -22,7 +22,7 @@ private:
     int size;
 public:
     // Constructor
-    Attay<Type>(int size);
+    Array<Type>(int size);
     
     // Copy Constructor
     Array<Type>(const Array<Type> & toCopy);

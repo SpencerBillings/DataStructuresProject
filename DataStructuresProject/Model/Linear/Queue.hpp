@@ -15,14 +15,14 @@
 using namespace std;
 
 template <class Type>
-class class Queue : public LinkedList<Type>
+class Queue : public LinkedList<Type>
 {
 public:
     Queue();
     ~Queue();
     
     // Queue methods
-    void enqueue(type data);
+    void enqueue(Type data);
     Type dequeue();
     Type peek();
     void clear();
@@ -69,14 +69,13 @@ void Queue<Type> :: enqueue(Type item)
 }
 
 template <class Type>
-void Queue<Type> :: addAtFunction(int index, Type item)
+void Queue<Type> :: addAtIndex(int index, Type item)
 {
     assert(index == this->size);
     enqueue(item);
 }
 
 template <class Type>
-void Queue<Type> :: add(Type item)
 void Queue<Type> :: add(Type item)
 {
     enqueue(item);
