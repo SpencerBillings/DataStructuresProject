@@ -33,6 +33,7 @@
 		EB14F7C6220C84E800FB13DA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		EB14F7C7220C936D00FB13DA /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		EB634B46221EEF4300883648 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
+		EB634B47221EF80F00883648 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		EB726F34221C552500C28B9B /* CPPUML1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CPPUML1.png; path = ../../../../CPPUML1.png; sourceTree = "<group>"; };
 		EB87EBD72209DC4500D11D22 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		EB87EBD82209DC4500D11D22 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
@@ -175,6 +176,7 @@
 				EB14F7C7220C936D00FB13DA /* LinkedList.hpp */,
 				EBA49E952211D65E001CEB21 /* Stack.hpp */,
 				EBA49E962211DAAE001CEB21 /* Queue.hpp */,
+				EB634B47221EF80F00883648 /* CircularList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";

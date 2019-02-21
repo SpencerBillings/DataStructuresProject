@@ -21,7 +21,7 @@ private:
 public:
     DoubleNode();
     DoubleNode(Type data);
-    DoubleNode(Type data, DoubleNode<Type> * prevNode, DoubleNode<Type> * next);
+    DoubleNode(Type data, DoubleNode<Type> * prev, DoubleNode<Type> * next);
     
     DoubleNode<Type> * getNext();
     DoubleNode<Type> * getPrev();
@@ -45,7 +45,7 @@ DoubleNode<Type> :: DoubleNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-DoubleNode<Type> :: DoubleNode(Type data, DoubleNode<Type> *previous, DoubleNode<Type>* next) : Node<Type>(data)
+DoubleNode<Type> :: DoubleNode(Type data, DoubleNode<Type> *prev, DoubleNode<Type>* next) : Node<Type>(data)
 {
     this->prev = prev;
     this->next = next;
