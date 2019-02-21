@@ -107,7 +107,7 @@ void CircularList<Type> :: addAtIndex(int index, Type item)
     DoubleNode<Type> * prev;
     DoubleNode<Type> * addMe;
     
-    if (index <this->size)
+    if (index < this->size)
     {
         next = findNode(index);
         prev = next->getPrev();
@@ -169,6 +169,16 @@ Type CircularList<Type> :: remove(int index)
     this->size--;
     delete removed;
     return value;
+}
+
+template <class Type>
+Type CircularList<Type> :: setAtIndex(int index, Type item)
+{
+    assert(index >= 0 && index < size);
+    DoubleNode<Type> * replacedValue = findNode(index);
+    Type replaced = replacedValue->getData();
+    replacedValue->setData(item);
+    return replaced;
 }
 
 template <class Type>
