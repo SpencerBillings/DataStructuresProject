@@ -32,6 +32,7 @@
 		EB14F7C5220C83B200FB13DA /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		EB14F7C6220C84E800FB13DA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		EB14F7C7220C936D00FB13DA /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		EB634B46221EEF4300883648 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		EB726F34221C552500C28B9B /* CPPUML1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CPPUML1.png; path = ../../../../CPPUML1.png; sourceTree = "<group>"; };
 		EB87EBD72209DC4500D11D22 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		EB87EBD82209DC4500D11D22 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
@@ -161,6 +162,7 @@
 			children = (
 				EB9DCDC721FF60D100446909 /* Node.hpp */,
 				EBAD01242201F8AF007FAD80 /* LinearNode.hpp */,
+				EB634B46221EEF4300883648 /* DoubleNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
