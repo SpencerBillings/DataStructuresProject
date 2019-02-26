@@ -15,7 +15,6 @@
 #include "../Model/Linear/LinkedList.hpp"
 #include "../Model/Linear/Stack.hpp"
 #include "../Model/Linear/Queue.hpp"
-#include "../Model/Linear/Array.hpp"
 
 #include <iostream>
 
@@ -25,6 +24,9 @@ class LinearTester
 {
 public:
     void testVsSTL();
+    void testVsStack();
+    void testVsQueue();
+    void testVsDouble();
     
 };
 

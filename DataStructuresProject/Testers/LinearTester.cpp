@@ -16,11 +16,14 @@ void LinearTester :: testVsSTL()
     vector<CrimeData> crimes = FileController :: readCrimeDataToVector("../Resources/Data/crime.csv");
     crimeTimerSTL.stopTimer();
     
+    
     crimeTimerOOP.startTimer();
     LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("../Resources/Data/crime.csv");
     crimeTimerOOP.stopTimer();
     
+    cout << "This is the STL Read time: " << endl;
     crimeTimerSTL.displayInformation();
+    cout << "This is the OOP Node Read time: " << endl;
     crimeTimerOOP.displayInformation();
     cout << "A difference of: " << crimeTimerOOP.getTimeInMicroseconds() - crimeTimerSTL.getTimeInMicroseconds() << " microseconds" << endl;
     
@@ -32,7 +35,9 @@ void LinearTester :: testVsSTL()
     LinkedList<Music> musicList = FileController :: musicDataToList("/Users/sbil1824/Documents/C++ Projects/DataStructuresProject/DataStructuresProject/Resources/Data/music.csv");
     musicOOP.stopTimer();
     
+    cout << "This is the STL Read time: " << endl;
     musicSTL.displayInformation();
+    cout << "This is the OOP Node Read time: " << endl;
     musicOOP.displayInformation();
     cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicSTL.getTimeInMicroseconds() << " microseconds" << endl;
     
@@ -40,4 +45,19 @@ void LinearTester :: testVsSTL()
     crimeTimerSTL.resetTimer();
     musicOOP.resetTimer();
     musicSTL.resetTimer();
+}
+
+void LinearTester :: testVsStack()
+{
+    
+}
+
+void LinearTester :: testVsQueue()
+{
+    
+}
+
+void LinearTester :: testVsDouble()
+{
+    
 }
