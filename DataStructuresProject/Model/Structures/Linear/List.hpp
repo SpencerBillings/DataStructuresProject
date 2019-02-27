@@ -9,7 +9,7 @@
 #ifndef List_hpp
 #define List_hpp
 
-#include "../Nodes/LinearNode.hpp"
+#include "/Users/sbil1824/Documents/C++ Projects/DataStructuresProject/DataStructuresProject/Model/Nodes/LinearNode.hpp"
 
 template <class Type>
 class List

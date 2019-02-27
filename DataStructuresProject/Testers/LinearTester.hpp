@@ -12,9 +12,9 @@
 #include "../Controller/Tools/Timer.hpp"
 #include "../Controller/FileController.hpp"
 
-#include "../Model/Linear/LinkedList.hpp"
-#include "../Model/Linear/Stack.hpp"
-#include "../Model/Linear/Queue.hpp"
+#include "../Model/Structures/Linear/LinkedList.hpp"
+#include "../Model/Structures/Linear/Stack.hpp"
+#include "../Model/Structures/Linear/Queue.hpp"
 
 #include <iostream>
 
@@ -27,7 +27,6 @@ public:
     void testVsStack();
     void testVsQueue();
     void testVsDouble();
-    
 };
 
 

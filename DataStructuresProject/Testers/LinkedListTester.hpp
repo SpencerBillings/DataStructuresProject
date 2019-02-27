@@ -12,8 +12,10 @@
 #include "../Model/Structures/Linear/LinkedList.hpp"
 #include "../Controller/FileController.hpp"
 #include "../Controller/Tools/Timer.hpp"
-#include "../Data/CrimeData.hpp"
+#include "../Resources/Data/CrimeData.hpp"
 #include <iostream>
+
+using namespace std;
 
 class LinkedListTester
 {

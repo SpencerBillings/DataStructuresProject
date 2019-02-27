@@ -49,7 +49,8 @@ void LinearTester :: testVsSTL()
 
 void LinearTester :: testVsStack()
 {
-    
+    stack<CrimeData> crimeStack = FileController :: readCrimeDataToStack("../Resources/Data/crime.csv");
+    for(int i = 0; i < )
 }
 
 void LinearTester :: testVsQueue()
