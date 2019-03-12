@@ -49,13 +49,18 @@ void LinearTester :: testVsSTL()
 
 void LinearTester :: testVsStack()
 {
-    stack<CrimeData> crimeStack = FileController :: readCrimeDataToStack("../Resources/Data/crime.csv");
-    for(int i = 0; i < )
+    Stack<CrimeData> crymeStack;
+    vector<CrimeData> cryme = FileController :: readCrimeDataToVector("../Resources/Data/crime.csv");
+    LinkedList<CrimeData> moreCrymes = FileController :: readDataToList("../Resources/Data/crime.csv");
+    for(int i = 0; i < 10; i++)
+    {
+        crymeStack.push(moreCrymes.getFromIndex(i));
+    }
 }
 
 void LinearTester :: testVsQueue()
 {
-    
+    vector<Music> musik = FileController :: musicDataToVector("../Resources/Data/music.csv")
 }
 
 void LinearTester :: testVsDouble()

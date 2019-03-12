@@ -57,6 +57,7 @@
 		EBA49E962211DAAE001CEB21 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		EBAD01242201F8AF007FAD80 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		EBAD0126220204F2007FAD80 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		EBB883CF2237F318001E1264 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Graph.hpp; path = Linear/Graph.hpp; sourceTree = "<group>"; };
 		EBF15E2122147E6400C0C377 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
 		EBF15E2222147E6400C0C377 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +189,7 @@
 			children = (
 				EBAD01222201F0D1007FAD80 /* Linear */,
 				EBAD0126220204F2007FAD80 /* Array.hpp */,
+				EBB883CF2237F318001E1264 /* Graph.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
