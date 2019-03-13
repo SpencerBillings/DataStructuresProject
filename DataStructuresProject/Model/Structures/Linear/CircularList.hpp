@@ -9,7 +9,7 @@
 #ifndef CircularList_hpp
 #define CircularList_hpp
 
-#include "../Nodes/DoubleNode.hpp"
+#include "/Users/sbil1824/Documents/C++ Projects/DataStructuresProject/DataStructuresProject/Model/Nodes/DoubleNode.hpp"
 
 template <class Type>
 class CircularList
@@ -43,7 +43,7 @@ CircularList<Type> :: CircularList()
 }
 
 template <class Type>
-CircularList<Type> :: ~CirvularList()
+CircularList<Type> :: ~CircularList()
 {
     DoubleNode<Type> * current = front;
     while (this->front != nullptr)
@@ -60,7 +60,7 @@ DoubleNode<Type> * CircularList<Type> :: findNode(int index)
     assert(index >= 0 && index < this->size);
     DoubleNode<Type> * nodeToFind;
     
-    if(index < this->size / 2)'
+    if(index < this->size / 2)
     {
         nodeToFind = this->front;
         for (int position = 0; position < index; position++)
@@ -182,7 +182,7 @@ Type CircularList<Type> :: setAtIndex(int index, Type item)
 }
 
 template <class Type>
-int CircularList<Type> :: getSize() cosnt
+int CircularList<Type> :: getSize() const
 {
     return this->size;
 }

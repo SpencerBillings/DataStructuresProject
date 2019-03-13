@@ -15,6 +15,7 @@
 #include "../Model/Structures/Linear/LinkedList.hpp"
 #include "../Model/Structures/Linear/Stack.hpp"
 #include "../Model/Structures/Linear/Queue.hpp"
+#include "../Model/Structures/Linear/CircularList.hpp"
 
 #include <iostream>
 

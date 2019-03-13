@@ -52,7 +52,7 @@ void LinearTester :: testVsStack()
     Stack<CrimeData> crymeStack;
     vector<CrimeData> cryme = FileController :: readCrimeDataToVector("../Resources/Data/crime.csv");
     LinkedList<CrimeData> moreCrymes = FileController :: readDataToList("../Resources/Data/crime.csv");
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < 11; i++)
     {
         crymeStack.push(moreCrymes.getFromIndex(i));
     }
@@ -60,10 +60,17 @@ void LinearTester :: testVsStack()
 
 void LinearTester :: testVsQueue()
 {
-    vector<Music> musik = FileController :: musicDataToVector("../Resources/Data/music.csv")
+    Queue<Music> musikQueue;
+    vector<Music> musik = FileController :: musicDataToVector("../Resources/Data/music.csv");
+    LinkedList<Music> moreMusik = FileController :: musicDataToList("../Resources/Data/music.csv");
+    for(int i = 0; i < 11; i++)
+    {
+        musikQueue.enqueue(moreMusik.getFromIndex(i));
+    }
 }
 
 void LinearTester :: testVsDouble()
 {
-    
+    LinkedList<CrimeData> crymeList = FileController :: readDataToList("../Resources/Data/crime.csv");
+    CircularList<CrimeData> crymeCircle;
 }
