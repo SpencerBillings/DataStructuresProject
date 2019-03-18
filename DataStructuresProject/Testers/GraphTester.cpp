@@ -8,9 +8,13 @@
 
 #include "GraphTester.hpp"
 
+void GraphTester :: testGraphs()
+{
+    setup();
+    compareTraversals();
+    findCheapestTraversal();
+}
 
-
-template <class Type>
 void GraphTester :: setup()
 {
     puzzle.addVertex("a ");
@@ -127,4 +131,28 @@ void GraphTester :: setup()
     puzzle.addEdgeCost(13, 15, 88);
     puzzle.addEdgeCost(19, 13, 21);
     
+}
+
+void GraphTester :: compareTraversals()
+{
+    
+    cout << "depth first" << endl;
+    for(int index = 0; index < puzzle.size(); index++)
+    {
+        cout << "" << endl;
+        cout << "NEXT" << endl;
+        puzzle.depthFirstTraversal(puzzle, index);
+    }
+    
+    // will.i.am quote
+    //puzzle.depthFirstTraversal(puzzle, 33);
+    //puzzle.breadthFirstTraversal(puzzle, 33);
+    
+    // identify the traversal type and parameters to get the two quotes and authors stored in the graph
+    // loop to check all traversals
+}
+
+void GraphTester :: findCheapestTraversal()
+{
+    // find the cheapest non-zero traversal
 }

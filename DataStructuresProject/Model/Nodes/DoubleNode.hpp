@@ -18,6 +18,10 @@ private:
     DoubleNode<Type> * nextNode;
     DoubleNode<Type> * previousNode;
     
+protected:
+    DoubleNode<Type> * previous;
+    DoubleNode<Type> * next;
+    
 public:
     DoubleNode();
     DoubleNode(Type data);

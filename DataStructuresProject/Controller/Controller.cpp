@@ -11,9 +11,10 @@
 void Controller :: start()
 {
     cout << "Welcome, welcome to Papa's house." << endl;
-    usingNodes();
-    testFiles();
-    testLinear();
+    testGraph();
+    //usingNodes();
+    //testFiles();
+    //testLinear();
 }
 
 void Controller :: usingNodes()
@@ -28,11 +29,17 @@ void Controller :: usingNodes()
 
 void Controller :: testFiles()
 {
-    vector<CrimeData> myData = FileController :: readCrimeDataToVector("../Resources/Data/crime.csv");
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/sbil1824/Documents/C++ Projects/DataStructuresProject/DataStructuresProject/Resources/Data/crime.csv");
     for (int index = 234; index < 256; index++)
     {
         cout << index << ": contents are: " << myData[index] << endl;
     }
+}
+
+void Controller :: testGraph()
+{
+    GraphTester helloThere;
+    helloThere.testGraphs();
 }
 
 void Controller :: testLinear()

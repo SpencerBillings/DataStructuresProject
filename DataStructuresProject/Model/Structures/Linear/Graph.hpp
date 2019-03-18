@@ -12,17 +12,19 @@
 #include <set>
 #include <queue>
 #include <assert.h>
+#include <iostream>
 
 using namespace std;
 template <class Type>
-class Grpah
+class Graph
 {
 private:
-    static adjacencyMatrix [MAXIMUM][MAXIMUM];
+    static const int MAXIMUM = 50;
+    bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
     int vertexCount;
-    void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]):
+    void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
     
 public:
     Graph();
@@ -43,9 +45,10 @@ public:
     //Accessors
     Type& operator [] (int vertex);
     Type operator [] (int vertex) const;
+    int size() const;
     
     //Check Connections
-    bool has UndirectedConnection(int source, int target) const;
+    bool hasUndirectedConnection(int source, int target) const;
     bool areConnected(int source, int target) const;
     std :: set<int> neighbors(int vertex) const;
     
@@ -55,7 +58,7 @@ public:
     int costTraversal(Graph<Type> & graph, int vertex);
 };
     
-    tempate <class Type>
+    template <class Type>
     const int Graph<Type> :: MAXIMUM;
     
     template <class Type>
@@ -123,17 +126,17 @@ public:
     {
         assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
         adjacencyMatrix[source][target] = true;
-        adjacencyMatric[target][source] = true;
+        adjacencyMatrix[target][source] = true;
     }
     
     template <class Type>
     void Graph<Type> :: removeEdge(int source, int target)
     {
-        assert(source >= 0 && source < vertexCount && target >= 0 target < vertexCount);
+        assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
         adjacencyMatrix[source][target] = false;
     }
     
-    tempate <class Type>
+    template <class Type>
     void Graph<Type> :: removeEdgeUndirected(int source, int target)
     {
         assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
@@ -156,7 +159,7 @@ public:
         
         bool isAnEdge = false;
         
-        isAnEdge = adjacencyMatrix[source][target] || adjacencyMateix[target][source];
+        isAnEdge = adjacencyMatrix[source][target] || adjacencyMatrix[target][source];
         
         return isAnEdge;
     }
@@ -195,14 +198,14 @@ public:
         bool visitedVertices[MAXIMUM];
         assert(vertex < currentGraph.size());
         std::fill_n(visitedVertices, currentGraph.size(), false);
-        depthFirstTraversal(currentGraph, vertex vissitedVertices);
+        depthFirstTraversal(currentGraph, vertex, visitedVertices);
     }
     
     template <class Type>
     void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
     {
         std::set<int> connections = currentGraph.neighbors(vertex);
-        std::set<int> connections = setIterator;
+        std::set<int>::iterator setIterator;
         
         visited[vertex] = true;
         cout << currentGraph[vertex] << ", " << endl;
@@ -220,9 +223,10 @@ public:
     void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
     {
         assert(vertex < currentGraph.size());
+        bool visited[MAXIMUM];
         std::set<int> connections;
         std::set<int>::iterator setIterator;
-        set::queue<int> vertexQueue;
+        std::queue<int> vertexQueue;
         
         std::fill_n(visited, currentGraph.size(), false);
         visited[vertex] = true;
@@ -266,9 +270,9 @@ public:
             
             for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
             {
-                if(!visited[setIterator])
+                if(!visited[*setIterator])
                 {
-                    cost += weightCostMatrix[currentIndex][*setIterator];l
+                    cost += weightCostMatrix[currentIndex][*setIterator];
                     visited[*setIterator] = true;
                     vertexQueue.push(*setIterator);
                 }

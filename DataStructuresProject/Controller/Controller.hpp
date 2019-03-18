@@ -14,6 +14,7 @@
 #include "../Model/Nodes/LinearNode.hpp"
 #include "FileController.hpp"
 #include "../Testers/LinearTester.hpp"
+#include "../Testers/GraphTester.hpp"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ private:
     void usingNodes();
     void testFiles();
     void testLinear();
+    void testGraph();
 public:
     void start();
 };

@@ -22,6 +22,6 @@ private:
     
 public:
     void testGraphs();
-}
+};
 
 #endif /* GraphTester_hpp */
