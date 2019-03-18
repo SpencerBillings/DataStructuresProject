@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB375968222451E20071C44D /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB375966222451E20071C44D /* LinkedListTester.cpp */; };
+		EB5DDE53223FDADB00D8A74C /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB5DDE51223FDADB00D8A74C /* GraphTester.cpp */; };
 		EB87EBD92209DC4500D11D22 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB87EBD72209DC4500D11D22 /* Timer.cpp */; };
 		EB87EBDC2209E07300D11D22 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB87EBDA2209E07300D11D22 /* FileController.cpp */; };
 		EB87EBE02209E47C00D11D22 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB87EBDF2209E47C00D11D22 /* CrimeData.cpp */; };
@@ -35,6 +36,8 @@
 		EB14F7C7220C936D00FB13DA /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		EB375966222451E20071C44D /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		EB375967222451E20071C44D /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
+		EB5DDE51223FDADB00D8A74C /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
+		EB5DDE52223FDADB00D8A74C /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		EB634B46221EEF4300883648 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		EB634B47221EF80F00883648 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		EB726F34221C552500C28B9B /* CPPUML1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CPPUML1.png; path = ../../../../CPPUML1.png; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 				EBF15E2222147E6400C0C377 /* LinearTester.hpp */,
 				EB375966222451E20071C44D /* LinkedListTester.cpp */,
 				EB375967222451E20071C44D /* LinkedListTester.hpp */,
+				EB5DDE51223FDADB00D8A74C /* GraphTester.cpp */,
+				EB5DDE52223FDADB00D8A74C /* GraphTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				EB9DCDC321FF5D7C00446909 /* Runner.cpp in Sources */,
 				EB87EBE32209E7D300D11D22 /* Music.cpp in Sources */,
 				EB9DCDC621FF5D8700446909 /* Controller.cpp in Sources */,
+				EB5DDE53223FDADB00D8A74C /* GraphTester.cpp in Sources */,
 				EB87EBDC2209E07300D11D22 /* FileController.cpp in Sources */,
 				EBF15E2322147E6400C0C377 /* LinearTester.cpp in Sources */,
 				EB375968222451E20071C44D /* LinkedListTester.cpp in Sources */,
