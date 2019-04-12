@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB0DF83E2260E1FA00D3E9E8 /* BinaryTreeTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB0DF83C2260E1FA00D3E9E8 /* BinaryTreeTester.cpp */; };
 		EB375968222451E20071C44D /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB375966222451E20071C44D /* LinkedListTester.cpp */; };
 		EB5DDE53223FDADB00D8A74C /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB5DDE51223FDADB00D8A74C /* GraphTester.cpp */; };
 		EB87EBD92209DC4500D11D22 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB87EBD72209DC4500D11D22 /* Timer.cpp */; };
@@ -32,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		EB0DF83B2260D8AC00D3E9E8 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
+		EB0DF83C2260E1FA00D3E9E8 /* BinaryTreeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeTester.cpp; sourceTree = "<group>"; };
+		EB0DF83D2260E1FA00D3E9E8 /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
+		EB0DF83F2260E29F00D3E9E8 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
+		EB0DF8402260E3F500D3E9E8 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		EB14F7C5220C83B200FB13DA /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		EB14F7C6220C84E800FB13DA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		EB14F7C7220C936D00FB13DA /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
@@ -195,6 +200,8 @@
 				EBAD01222201F0D1007FAD80 /* Linear */,
 				EBAD0126220204F2007FAD80 /* Array.hpp */,
 				EBB883CF2237F318001E1264 /* Graph.hpp */,
+				EB0DF83F2260E29F00D3E9E8 /* Tree.hpp */,
+				EB0DF8402260E3F500D3E9E8 /* BinarySearchTree.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -208,6 +215,8 @@
 				EB375967222451E20071C44D /* LinkedListTester.hpp */,
 				EB5DDE51223FDADB00D8A74C /* GraphTester.cpp */,
 				EB5DDE52223FDADB00D8A74C /* GraphTester.hpp */,
+				EB0DF83C2260E1FA00D3E9E8 /* BinaryTreeTester.cpp */,
+				EB0DF83D2260E1FA00D3E9E8 /* BinaryTreeTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB87EBD92209DC4500D11D22 /* Timer.cpp in Sources */,
+				EB0DF83E2260E1FA00D3E9E8 /* BinaryTreeTester.cpp in Sources */,
 				EB87EBE02209E47C00D11D22 /* CrimeData.cpp in Sources */,
 				EB9DCDC321FF5D7C00446909 /* Runner.cpp in Sources */,
 				EB87EBE32209E7D300D11D22 /* Music.cpp in Sources */,
