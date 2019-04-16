@@ -18,7 +18,6 @@ template <class Type>
 class BinarySearchTree : public Tree<Type>
 {
 protected:
-    //MARK: Protected Methods
     int calculateSize(BinaryTreeNode<Type> * startNode);
     int ccalculateHeight(BinaryTreeNode<Type> * startNode);
     bool isBalanced(BinaryTreeNode<Type> * startNode);
@@ -36,7 +35,6 @@ protected:
     void removeNode(BinaryTreeNode<Type> * removeMe);
     
 public:
-    //MARK: Public Methods
     BinarySearchTree();
     ~BinarySearchTree();
     
@@ -60,6 +58,41 @@ public:
     Type findMaximum();
 };
 
+//MARK: Protected Methods
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if (currentNode != nullptr)
+    {
+        inOrderTraversal(currentNode->getLeftChild());
+        cout << currentNode->getData() << endl;
+        inOrderTraversal(currentNode->getRightChild());
+    }
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if (currentNode != nullptr)
+    {
+        cout << currentNode->getData() << endl;
+        preOrderTraversal(currentNode->getLeftChild());
+        preORderTraversal(currentNode->getRightChild());
+    }
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal()
+{
+    if (currentNode != nullptr)
+    {
+        postOrderTraversal(currentNode->getLeftChild());
+        postOrderTraversal(currentNode->getRightChild());
+        cout << currentNode->getData() << endl;
+    }
+}
+
+//MARK: Public Methods
 template <class Type>
 void BinarySearchTree<Type> :: inOrderTraversal()
 {
@@ -69,13 +102,13 @@ void BinarySearchTree<Type> :: inOrderTraversal()
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal()
 {
-    
+    preOrderTraversal(this->root);
 }
 
 template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal()
 {
-    
+    postOrderTraversal(this->root);
 }
 
 template <class Type>
@@ -155,6 +188,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
 template <class Type>
 void BinarySearchTree<Type> :: remove(Type item)
 {
+    
 }
 
 #endif /* BinarySearchTree_hpp */

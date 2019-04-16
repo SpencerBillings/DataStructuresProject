@@ -49,6 +49,7 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
     this->rightChild = nullptr;
 }
 
+//MARK: Getters
 template <class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot()
 {
@@ -67,10 +68,11 @@ BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightChild()
     return this->rightChild;
 }
 
+//MARK: Setters
 template <class Type>
 void BinaryTreeNode<Type> :: setRoot(BinaryTreeNode<Type> * root)
 {
-    root = newRoot;
+    root = root;
 }
 
 template <class Type>

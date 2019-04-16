@@ -11,7 +11,8 @@
 void Controller :: start()
 {
     cout << "Welcome, welcome to Papa's house." << endl;
-    testGraph();
+    testTree();
+    //testGraph();
     //usingNodes();
     //testFiles();
     //testLinear();
@@ -46,4 +47,11 @@ void Controller :: testLinear()
 {
     LinearTester lookieHere;
     lookieHere.testVsSTL();
+}
+
+void Controller :: testTree()
+{
+    BinaryTreeTester makeLikeATree;
+    makeLikeATree.doTreeStuff();
+    
 }

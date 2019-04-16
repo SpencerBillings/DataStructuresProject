@@ -15,6 +15,7 @@
 #include "FileController.hpp"
 #include "../Testers/LinearTester.hpp"
 #include "../Testers/GraphTester.hpp"
+#include "/Users/sbil1824/Documents/C++ Projects/DataStructuresProject/DataStructuresProject/Testers/BinaryTreeTester.hpp"
 
 using namespace std;
 
@@ -25,6 +26,7 @@ private:
     void testFiles();
     void testLinear();
     void testGraph();
+    void testTree();
 public:
     void start();
 };
