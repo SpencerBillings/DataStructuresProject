@@ -11,13 +11,23 @@
 
 void BinaryTreeTester :: doTreeStuff()
 {
-    testTree.insert(55);
-    testTree.insert(41);
-    testTree.insert(2);
-    testTree.insert(86);
-    testTree.insert(101);
-    testTree.insert(60);
-    testTree.insert(38);
-    testTree.insert(14);
-    testTree.inOrderTraversal();
+    testIntTree.insert(55);
+    testIntTree.insert(41);
+    testIntTree.insert(2);
+    testIntTree.insert(86);
+    testIntTree.insert(101);
+    testIntTree.insert(60);
+    testIntTree.insert(38);
+    testIntTree.insert(14);
+    testIntTree.inOrderTraversal();
+    
+    testStrTree.insert("apple");
+    testStrTree.insert("banana");
+    testStrTree.insert("cherry");
+    testStrTree.insert("grapefruit");
+    testStrTree.insert("lemon");
+    testStrTree.insert("mango");
+    testStrTree.insert("orange");
+    testStrTree.insert("pineapple");
+    testStrTree.inOrderTraversal();
 }

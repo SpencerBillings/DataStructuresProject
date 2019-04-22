@@ -29,8 +29,8 @@ protected:
     
     void burnTree(BinaryTreeNode<Type> * node);
     
-    BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
+    BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     
     void removeNode(BinaryTreeNode<Type> * removeMe);
     
@@ -98,7 +98,7 @@ bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int 
         return false;
     }
     
-    return (isComplete(startNode->getLeftChild(), 2 * index + 1, size) && iscomplete(startNode->getRightchild(), 2 * index + 2, size));
+    return (isComplete(startNode->getLeftChild(), 2 * index + 1, size) && isComplete(startNode->getRightChild(), 2 * index + 2, size));
 }
 
 template <class Type>
@@ -119,7 +119,7 @@ void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentN
     {
         cout << currentNode->getData() << endl;
         preOrderTraversal(currentNode->getLeftChild());
-        preORderTraversal(currentNode->getRightChild());
+        preOrderTraversal(currentNode->getRightChild());
     }
 }
 
@@ -131,6 +131,17 @@ void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * current
         postOrderTraversal(currentNode->getLeftChild());
         postOrderTraversal(currentNode->getRightChild());
         cout << currentNode->getData() << endl;
+    }
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: burnTree(BinaryTreeNode<Type> * node)
+{
+    if(node != nullptr)
+    {
+        burnTree(node->getLeftChild());
+        burnTree(node->getRightChild());
+        delete node;
     }
 }
 
@@ -157,7 +168,7 @@ BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNod
     while(currentNode != nullptr)
     {
         previous = currentNode;
-        currentNode = currentNode->getRightNode();
+        currentNode = currentNode->getRightChild();
     }
     
     return previous;
@@ -228,9 +239,9 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
         previous = current->getRoot();
         removeMe->setData(current->getData());
         
-        if(previous->nullptr)
+        if(previous == nullptr)
         {
-            removeMe->setLeftNode(current->getLeftChild());
+            removeMe->setLeftChild(current->getLeftChild());
         }
         else
         {
@@ -238,7 +249,7 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
         }
         if(current->getLeftChild() != nullptr)
         {
-            current->getLeftChild()->setRootNode(removeMe);
+            current->getLeftChild()->setRoot(removeMe);
         }
         
         delete current;
@@ -251,6 +262,17 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 }
 
 //MARK: Public Methods
+template <class Type>
+BinarySearchTree<Type> :: BinarySearchTree()
+{
+}
+
+template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    burnTree(this->root);
+}
+
 template <class Type>
 void BinarySearchTree<Type> :: inOrderTraversal()
 {
@@ -284,7 +306,7 @@ int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * current)
 {
     if (current != nullptr)
     {
-        return calculatedSize(current->getleftchild()) + calculateSize(current->getRightChild()) + 1;
+        return calculateSize(current->getLeftChild()) + calculateSize(current->getRightChild()) + 1;
     }
     return 0;
 }
@@ -300,7 +322,7 @@ int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * current)
 {
     if (current != nullptr)
     {
-        return max(calculateHeight(current->getLeftChild()), calculateHeight(current->getRightchild())) + 1;
+        return max(calculateHeight(current->getLeftChild()), calculateHeight(current->getRightChild())) + 1;
     }
     return 0;
 }
@@ -332,7 +354,7 @@ bool BinarySearchTree<Type> :: contains(Type containsItem)
     {
         while(current != nullptr)
         {
-            if(containsItem != nullptr)
+            if(containsItem == current->getData())
             {
                 return true;
             }
