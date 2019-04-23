@@ -20,6 +20,7 @@ void BinaryTreeTester :: doTreeStuff()
     testIntTree.insert(38);
     testIntTree.insert(14);
     testIntTree.inOrderTraversal();
+    testIntTree.getHeight();
     
     testStrTree.insert("apple");
     testStrTree.insert("banana");
@@ -30,4 +31,5 @@ void BinaryTreeTester :: doTreeStuff()
     testStrTree.insert("orange");
     testStrTree.insert("pineapple");
     testStrTree.inOrderTraversal();
+    testStrTree.getHeight();
 }
