@@ -265,6 +265,7 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 template <class Type>
 BinarySearchTree<Type> :: BinarySearchTree()
 {
+    this->root = nullptr;
 }
 
 template <class Type>

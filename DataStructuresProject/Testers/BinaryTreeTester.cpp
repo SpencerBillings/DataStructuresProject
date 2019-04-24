@@ -17,19 +17,19 @@ void BinaryTreeTester :: doTreeStuff()
     testIntTree.insert(86);
     testIntTree.insert(101);
     testIntTree.insert(60);
-    testIntTree.insert(38);
+    testIntTree.insert(50);
     testIntTree.insert(14);
-    testIntTree.inOrderTraversal();
+    testIntTree.preOrderTraversal();
     testIntTree.getHeight();
     
-    testStrTree.insert("apple");
-    testStrTree.insert("banana");
-    testStrTree.insert("cherry");
     testStrTree.insert("grapefruit");
-    testStrTree.insert("lemon");
-    testStrTree.insert("mango");
-    testStrTree.insert("orange");
     testStrTree.insert("pineapple");
-    testStrTree.inOrderTraversal();
+    testStrTree.insert("mango");
+    testStrTree.insert("cherry");
+    testStrTree.insert("lemon");
+    testStrTree.insert("apple");
+    testStrTree.insert("orange");
+    testStrTree.insert("banana");
+    testStrTree.preOrderTraversal();
     testStrTree.getHeight();
 }
