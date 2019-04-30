@@ -154,7 +154,7 @@ BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode
     while(currentNode != nullptr)
     {
         previous = currentNode;
-        currentNode = currentNode->getLeftNode();
+        currentNode = currentNode->getLeftChild();
     }
     
     return previous;
