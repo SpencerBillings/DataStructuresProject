@@ -67,6 +67,7 @@
 		EBAD01242201F8AF007FAD80 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		EBAD0126220204F2007FAD80 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		EBB883CF2237F318001E1264 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Graph.hpp; path = Linear/Graph.hpp; sourceTree = "<group>"; };
+		EBED20CF22788B9300F06894 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		EBF15E2122147E6400C0C377 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
 		EBF15E2222147E6400C0C377 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +203,7 @@
 				EBB883CF2237F318001E1264 /* Graph.hpp */,
 				EB0DF83F2260E29F00D3E9E8 /* Tree.hpp */,
 				EB0DF8402260E3F500D3E9E8 /* BinarySearchTree.hpp */,
+				EBED20CF22788B9300F06894 /* AVLTree.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
