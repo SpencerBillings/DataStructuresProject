@@ -67,6 +67,7 @@
 		EBAD01242201F8AF007FAD80 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		EBAD0126220204F2007FAD80 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		EBB883CF2237F318001E1264 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Graph.hpp; path = Linear/Graph.hpp; sourceTree = "<group>"; };
+		EBD5CE48227B3E5300096768 /* TreeUML.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TreeUML.png; sourceTree = "<group>"; };
 		EBED20CF22788B9300F06894 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		EBF15E2122147E6400C0C377 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
 		EBF15E2222147E6400C0C377 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
@@ -158,6 +159,7 @@
 		EB9DCDBD21FF5BED00446909 /* Diagrams */ = {
 			isa = PBXGroup;
 			children = (
+				EBD5CE48227B3E5300096768 /* TreeUML.png */,
 				EB726F34221C552500C28B9B /* CPPUML1.png */,
 			);
 			path = Diagrams;
